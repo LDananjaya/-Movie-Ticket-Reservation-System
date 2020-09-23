@@ -1,0 +1,91 @@
+body {
+    position: relative;
+    margin: 0px;
+    /* font-size: 20px; */
+}
+#name{
+    color: orange;
+    font-family: 'Fugaz One', cursive;
+    font-size: 30px;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Creepster|Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body header ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color:black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 5;
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+}
+
+body header ul  li {
+    float: left;
+}
+
+body header ul  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body header ul  li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    /* color: #39dc79; */
+    color: blueviolet;
+}
+
+footer a{
+    color: white;
+}
+#foot{
+    list-style-type: none;
+    overflow: hidden;
+ /* margin-top:0px; */
+/* display: block; */
+height: 150px;
+width: 100%; 
+background-color:#262028; 
+color: white;
+/* text-decoration: none; */ 
+} 
+#li{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 850px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+footer div div a{
+list-style-type: none;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+/* color: blue; */
+}
+
+footer div div a :hover{
+    text-decoration: none;
+    color: #39dc79;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+
+

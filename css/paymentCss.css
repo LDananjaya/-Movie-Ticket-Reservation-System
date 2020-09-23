@@ -1,0 +1,30 @@
+
+
+.form{
+    margin: 30px 50px 50px 100px;
+    padding: 50px 20px 20px 100px;
+    background-color: rgb(233, 169, 95)
+}
+
+#pDetails{
+    margin: 50px 0px 20px 0px;
+
+}
+.names{
+    font-size: 20px;
+}
+
+.but:hover{
+    background-color: rgb(221, 209, 209)
+
+}
+
+.but{
+    padding:18px 32px;
+
+}
+
+.intype{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
