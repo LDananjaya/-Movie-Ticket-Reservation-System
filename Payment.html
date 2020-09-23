@@ -1,0 +1,192 @@
+<!Doctype html>
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="css/homecss.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/myNewAboutUs.css">
+        <link rel="stylesheet" type="text/css" href="css/paymentCss.css">
+
+</head>
+
+<body>
+        <header>
+                <img class="backImg" src="images/banner1.jpeg">
+                <ul>
+                        <li id="name">Royal Cinema&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</li>
+                        <li class="main">
+                                <a href="Home.html">Home</a>
+                        </li>
+                        <li class="main">
+                                <a href="Movie.html">Movies</a>
+                        </li>
+                        <li class="main">
+                                <a href="Rates.html">Rates&ShowTimes</a>
+                        </li>
+                        <li class="main">
+                                <a href="#about">News</a>
+                        </li>
+                        <li class="main">
+                                <a href="BuyTicket.html">Buy Tickets</a>
+                        </li>
+                        <li class="main">
+                                <a href="contactus.html">Contac Us</a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+                        <li>
+                                <a></a>
+                        </li>
+
+
+                        <li class="main">
+                                <a href="Login.html">Login</a>
+                        </li>
+                </ul>
+        </header>
+
+        <h1 align="center" id="pDetails">Payment details</h1>
+
+        <div class="form">
+
+                        <label class="names"> <b> Movie Name </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;</label>
+                        <input type="text" name="mName" value="ABC" class="intype" >
+                        <br><br><br>
+                
+                        <label class="names" > <b> ODC  </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" value ="4"  class="intype" id="txt_odc">
+
+                        <lable  class="names" > Kids &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</lable>
+                        <select id="txt_kids" class="intype"> 
+                                <option value="0"> 0</option>
+                                <option value="1"> 1 </option>
+                                <option value="2"> 2 </option>
+                                <option value="4"> 3 </option>
+                                <option value="5"> 4 </option>
+                                <option value="5"> 5 </option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <lable   class="names">  Adult  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </lable>
+                        <select select name="adult" value="adult" id="txt_adult" onchange="checkFunction();"  class="intype"> 
+                                        <option value="0"> 0</option>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="4"> 3 </option>
+                                        <option value="5"> 4 </option>
+                                        <option value="5"> 5 </option>
+                         </select>
+                         <p  id="msg"></p>
+                         <br><br>
+
+                         <lable class="names"> <b> Gallery </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </lable>
+                         <input type="text" name="gallery" value="4" id="txt_gallery"  class="intype" readonly>
+
+                         <lable  class="names"> Kids &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</lable>
+                         <select name="kids" value="kids" id="txt1_kids" class="intype">
+                                        <option value="0"> 0</option>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="4"> 3 </option>
+                                        <option value="5"> 4 </option>
+                                        <option value="5"> 5 </option>  
+                        </select>  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+                         <lable   class="names"> Adult &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </lable>
+                         <select name ="adult" value ="adult" id="txt1_adult" onchange = "checkFunction();"  class="intype"> 
+                                        <option value="0"> 0</option>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="4"> 3 </option>
+                                        <option value="5"> 4 </option>
+                                        <option value="5"> 5 </option>
+                         </select>
+                         <p id="msg1"></p>                
+                        <br><br>
+ 
+                        
+
+
+                        <br><br><br>
+
+                         <label class="names"> <b> Payment Type </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                         <select  class="intype">
+                                 <option value"p1"> Cash </option>
+                                 <option value"p2"> Credit card </option>
+                                 <option value"p3"> Debit card </option>
+                        </select>  
+                        <br><br><br>     
+                        
+                        <input type="submit" value="SUBMIT" class="but">
+                                                                
+
+
+                
+                
+                        </div>
+                
+        
+
+
+        <footer>
+                <div class="container-fluid" id="foot">
+
+                        <div id="links">
+
+                                <a class="mouse" href="Home.html">
+                                        <b>Home</b>
+                                </a> |
+                                <a class="mouse" href="Terms of use.html">
+                                        <b>Terms of use</b>
+                                </a> |
+                                <a class="mouse" href="privacy policy.html">
+                                        <b>Privacy Policy</b>
+                                </a> |
+                                <a class="mouse" href="AboutUs.html">
+                                        <b>About Us</b>
+                                </a>
+                                <br/>
+                                <a class="mouse" href="Login.html">
+                                        <b>Login</b>
+                                </a> |
+                                <a class="mouse" href="signup.html">
+                                        <b>Register</b>
+                                </a> |
+                                <a class="mouse" href="contactus.html">
+                                        <b>Contac Us</b>
+                                </a>
+
+                        </div>
+
+                </div>
+
+        </footer>
+        <script src="js/selection.js"> </script>
+</body>
+
+
+</html>
