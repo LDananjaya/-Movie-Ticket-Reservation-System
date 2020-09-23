@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/admminStyleTheatre.css">
+    <link rel="stylesheet" type="text/css" href="css/theater.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="container-fluid topBar">
+        <div class="row">
+            <div class="col-11" id="royal">
+                <h2>Royal Cinema</h2>
+            </div>
+            <div class="col-1 " style="margin-top: 20px;;">
+                when admin login then display her/his Name
+                <p></p>
+                <a id="logOut " href="">
+                    <b>LogOut55</b>
+                </a>
+            </div>
+        </div>
+
+    </div> -->
+
+    <div class="container-fluid topClass" style="   background-color: #3382B9;height: 100px;width: 100%;">
+        <div class=" row ">
+            <div class="col">
+                <h2>Royal Cinema</h2>
+
+            </div>
+            <div class="col">
+                when admin login then display her/his Name
+                <p></p>
+                <a href="">
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                    <b>LogOut</b>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <ul>
+            <li>
+                <a href="#home"></a>
+            </li>
+            <li>
+                <a href="Dashboad1.html">
+                   
+                    <img class="imgdsh" src="images/home.png " align="left">&nbsp;Dashboard</a>
+            </li>
+            <li>
+                <a href="add theatre.html">
+                        
+                    <img class="imgdsh" src="images/movieTheater.png " align="left">&nbsp;Movie Theatres</a>
+            </li>
+            <li>
+                <a href="addmovie.html">
+                   
+                    <img class="imgdsh" src="images/movie.png " align="left">&nbsp;Movies</a>
+            </li>
+            <li>
+                <a href="add show time new.html">
+                    
+                    <img class="imgdsh" src="images/clock.png " align="left">&nbsp;Show Timings</a>
+            </li>
+            <li>
+                <a href="Booking.html">
+                    <img class="imgdsh" src="images/bookings.png " align="left">&nbsp;Bookings</a>
+            </li>
+            <li>
+                <a href="add user.html">
+                    <img class="imgdsh" src="images/users-group.png " align="left">Manage Admins</a>
+            </li>
+    
+        </ul>
+
+    <div class="centerdiv">
+
+        <h1>Theatre</h1>
+
+        <!-- btb btn-primary is a predefine class in boostrap  -->
+
+        <button type="button" class=" button  " id="myBtn">Add Theratre</button>
+
+        <br/>
+
+        <!-- table is a predefine class in boostrap -->
+        <div class="container-fluid">
+            <table id="tab1">
+
+                <!-- thead - light is a predefine class in boostrap -->
+
+                <thead>
+                    <tr>
+                        <th class="tab">Name</th>
+                        <th class="tab">ID</th>
+                        <th class="tab">Capacity</th>
+                        <th class="tab">Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                </tbody>
+                <tfoot>
+                    <tr class="center" style="text-align: center">
+                        <td colspan="6">
+                            <b>There are no records right now !</b>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <br/>
+        <p></p>
+
+
+        <div>
+            <form class="the" action="#myAct">
+
+                <label> Username &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="text" placeholder="Username" class="user" id="use1">
+                <br/>
+
+                <label>Capacity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="text" placeholder="Enter Capacity" class="user" id="use2">
+                <br/>
+
+                <label>Choose Photo :</label>
+                <input type="file" name="pic" accept="image/*" class="user" id="use3">
+                <!-- <input type="text" placeholder="Choose File" class="user" id="use3"> -->
+                <br/>
+
+                <h5>Reserved Seats</h5>
+
+                <lable>Balcony :</lable>
+                <input type="text" class="seat" id="Balcony">
+
+
+                <lable>ODC :</lable>
+                <input type="text" class="seat" id="ODC">
+                <br/>
+
+                <lable>Galarry :</lable>
+                <input type="text" class="seat" id="Galarry"> &nbsp;
+
+
+                <lable>Box :</lable>
+                <input type="text" class="seat" id="Box">
+                <br/>
+
+
+
+                <input type="submit" value="Update" id="sub" onclick="myUpdateValidation();">
+
+                <button style="height: 30px;width: 100px;" onclick="myUpdateValidation();" id="myBtnnn"> myButton</button>
+                <br/>
+
+            </form>
+
+        </div>
+
+        <div id="addTheatre" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <div class="rows">
+                    <div class="modelcol">
+
+                        <span class="close">&times;</span>
+
+                    </div>
+                    <div class="modelcol">
+                        <h3>
+                            <b>Add New Theatre</b>
+                        </h3>
+                    </div>
+
+                </div>
+
+
+
+                <form class="modelFrame form2 " action="#myAction">
+
+                    <label>
+                        <b>Name :</b>
+                    </label>
+                    <input type="text" value="" placeholder="Your Full Name" class="name textFile" id="#userName">
+                    <br/>
+
+                    <label>
+                        <b>Capacity :</b>
+                    </label>
+                    <input type="text" value="" placeholder="Capacity" class="name textFile" id="capacity">
+                    <br/>
+
+                    <lable>
+                        <b>Choose Photo :</b>
+                    </lable>
+                    <input type="file" name="pic" accept="image/*" class="name textFile" id="box3">
+
+                    <br/>
+
+                    <h3>Reserved Seats</h3>
+                    <!-- <section id="sec"> -->
+
+                    <lable>Balcony :</lable>
+                    <input type="text" class="seat" id="my">
+
+
+                    <lable>ODC :</lable>
+                    <input type="text" class="seat" id="my1">
+                    <br/>
+
+                    <lable>Galarry :</lable>
+                    <input type="text" class="seat" id="my2">
+
+
+                    <lable>Box :</lable>
+                    <input type="text" class="seat" id="bt">
+                    <br/>
+
+                    <!-- <input type="submit" value="Add" id="Adding"> -->
+                    <button type="submit" id="btnAdd" onclick="validateFunction();">
+                            Add
+                    </button>
+                    <!-- <button type="submit" id="Adding" >
+                            Add
+                        </button> -->
+                    <br/>
+
+                    <!-- </section> -->
+
+
+
+                </form>
+            </div>
+            <!-- END OF MODEL  -->
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        var theatremodal = document.getElementById('addTheatre');
+
+
+
+        // Get button id open the theratre model
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+
+            theatremodal.style.display = "block";
+            $("#userName").focus();
+        }
+
+
+        // When the user clicks on <span> (x), close the Theatre model
+
+        span.onclick = function () {
+
+            theatremodal.style.display = "none";
+            
+            $('#userName').removeClass("error");
+            $('#capacity').removeClass("error");
+            $('#my').removeClass("error");
+            $('#my1').removeClass("error");
+            $('#my2').removeClass("error");
+            $('#bt').removeClass("error");
+
+            $('#userName').val("");
+            $('#capacity').val("");
+            $('#my').val("");
+            $('#my1').val("");
+            $('#my2').val("");
+            $('#bt').val("");
+          
+            
+
+        }
+
+        // When the user clicks anywhere outside of theTheatre model, close it
+        window.onclick = function (event) {
+
+            if (event.target == theatremodal) {
+                theatremodal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/validate1.js"> </script>
+    <script type="text/javascript" src="js/addTheatre.js"></script>
+    
+
+
+
+</body>
+
+
+</html>

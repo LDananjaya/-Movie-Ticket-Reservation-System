@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/admminStyleTheatre.css">
+    <link rel="stylesheet" type="text/css" href="css/add user.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="container-fluid topBar">
+        <div class="row">
+            <div class="col-11" id="royal">
+                <h2>Royal Cinema</h2>
+            </div>
+            <div class="col-1 " style="margin-top: 20px;;">
+                when admin login then display her/his Name
+                <p></p>
+                <a id="logOut " href="">
+                    <b>LogOut55</b>
+                </a>
+            </div>
+        </div>
+
+    </div> -->
+
+    <div class="container-fluid topClass" style="   background-color: #3382B9;height: 100px;width: 100%;">
+        <div class=" row ">
+            <div class="col">
+                <h2>Royal Cinema</h2>
+
+            </div>
+            <div class="col">
+                when admin login then display her/his Name
+                <p></p>
+                <a href="">
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                    <b>LogOut</b>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <ul>
+            <li>
+                <a href="#home"></a>
+            </li>
+            <li>
+                <a href="Dashboad1.html">
+                   
+                    <img class="imgdsh" src="images/home.png " align="left">&nbsp;Dashboard</a>
+            </li>
+            <li>
+                <a href="add theatre.html">
+                        
+                    <img class="imgdsh" src="images/movieTheater.png " align="left">&nbsp;Movie Theatres</a>
+            </li>
+            <li>
+                <a href="addmovie.html">
+                   
+                    <img class="imgdsh" src="images/movie.png " align="left">&nbsp;Movies</a>
+            </li>
+            <li>
+                <a href="add show time new.html">
+                    
+                    <img class="imgdsh" src="images/clock.png " align="left">&nbsp;Show Timings</a>
+            </li>
+            <li>
+                <a href="Booking.html">
+                    <img class="imgdsh" src="images/bookings.png " align="left">&nbsp;Bookings</a>
+            </li>
+            <li>
+                <a href="add user.html">
+                    <img class="imgdsh" src="images/users-group.png " align="left">Manage Admins</a>
+            </li>
+    
+        </ul>
+
+    <div class="centerdiv">
+
+        <h1>Manage Admin</h1>
+
+        <!-- btb btn-primary is a predefine class in boostrap  -->
+
+        <button type="button" class=" button  " id="myBtn">Add Admin</button>
+
+        <br/>
+
+        <!-- table is a predefine class in boostrap -->
+        <div class="container-fluid">
+            <table class="user">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>NIC number</th>
+                  <th>E mail</th>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>sds</td>
+                  <td>00000</td>
+                  <td>@</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>er</td>
+                  <td>00000</td>
+                  <td>@</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>sdfsdf</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>2</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>0</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>0</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>0</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>0</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>00000</td>
+                  <td>  @    </td>
+                </tr>
+              </table>
+
+              <p><strong><br /></strong></p>
+              
+              <h2 id="upU">Update Admin</h2>
+              <p><strong><br /></strong></p>
+
+              <form class="update">
+                  <lable>NIC Number &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  :</lable>
+                  <input type= "text" placeholder="NIC" class="up">
+                 </br>
+
+                 <lable>Password&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  :</lable>
+                 <input type= "text" placeholder="Password" class="up">
+                </br>
+
+                <lable> Confirm Password :</lable>
+                 <input type= "text" placeholder="Confirm Password" class="up">
+                </br>
+
+                <input type="button" value="Add" class="up1">
+
+              </form>
+ 
+
+        
+
+        <div id="addTheatre" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                
+                <div class="rows">
+                    <div class="modelcol" >
+
+                        <span class="close">&times;</span>
+
+                    </div>
+                    <div class="modelcol" >
+                        <h2>
+                            <b>Add Admin</b>
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div>
+
+                <form class="modelFrame form2">
+                    <label>
+                        <b> User Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>
+                    </label>
+                    <input type="text" value="" placeholder="Your Full Name" class="name" id="box1">
+                    <br/>
+
+                    <label >
+                        <b>NIC number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>
+                    </label>
+                    <input type="text" value="" placeholder="NIC Number" class="name" id="box2">
+                    <br/>
+
+                    <lable>
+                        <b>E mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>
+                    </lable>
+                    <input type="text" value="" placeholder="E mail" class="name" id="box3">
+                    <br/>
+
+                    <lable>
+                        <b>Contact Number &nbsp; :</b>
+                       </lable>
+                    <input type="text" placeholder="Contact Number" class="name" id="box3" >
+                    <br/>
+
+                    <lable>
+                        <b>Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b>
+                    </lable>
+                    <input type="text" placeholder="Password" class="name" id="box3">
+                    <br/>
+
+                    <lable>
+                        <b>Confirm Password :</b>
+                        </lable>
+                    <input type="text" placeholder="Confirm Password" class="name" id="box3" >
+                    <br/>
+
+                    <input type="submit" value="Add" id="Add">
+                    <br/>
+
+
+
+                </form>
+            </div>
+            <!-- END OF MODEL  -->
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        //Get Theatre model
+        var theatremodal = document.getElementById('addTheatre');
+
+        // Get button id open the theratre model
+
+        var btn = document.getElementById("myBtn");
+
+        // Get the span element that closes the modal
+
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        
+        btn.onclick = function () {
+
+            theatremodal.style.display = "block";
+        }
+
+
+        // When the user clicks on <span> (x), close the Theatre model
+
+        span.onclick = function () {
+            theatremodal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of theTheatre model, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                theatremodal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script> -->
+
+
+</body>
+
+
+</html>
